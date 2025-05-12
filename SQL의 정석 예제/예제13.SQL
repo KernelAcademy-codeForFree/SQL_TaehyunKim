@@ -1,0 +1,2 @@
+-- 예제13 1. 직원 중에 '김정미'와 같은 직책(TITLE)을 가지는 사원의 이름과 직책, 급여, 부서번호를 나타내시오.(SELF JOIN을 사용할 것)
+SELECT E.NAME, E.TITLE, E.SALARY, E.DEPT_ID FROM S_EMP J, S_EMP E WHERE J.NAME = '김정미' AND J.TITLE = E.TITLE AND E.NAME <> '김정미';

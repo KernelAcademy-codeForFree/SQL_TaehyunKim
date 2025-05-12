@@ -1,0 +1,2 @@
+-- 예제11 1. 직원 테이블(S_EMP)과 급여 테이블(SALGRADE)을 JOIN하여 사원의 이름과 급여, 그리고 해당 급여등급을 나타내시오.
+SELECT E.NAME, E.SALARY, S.GRADE FROM S_EMP E, SALGRADE S WHERE E.SALARY BETWEEN LOSAL AND HISAL;
